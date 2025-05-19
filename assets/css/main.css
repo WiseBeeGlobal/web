@@ -71,6 +71,18 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+@font-face {
+  font-family: 'AlternateGothicStdNo2';
+  src: url('/assets/css/Fonts/Alternate Gothic No2 D Regular/Alternate Gothic No2 D Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.alternate-gothic {
+  font-family: 'AlternateGothicStdNo2', sans-serif;
+  font-size : 1.5em;
+}
+
 
 /* Basic */
 
@@ -2827,7 +2839,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #FABECA;
+			background-color: #1e591e;
 			color: #c8ece9;
 		}
 
@@ -2989,9 +3001,13 @@ input, select, textarea {
 			background-color: #2e3842;
 		}
 
+		.inner.wrapper.style3 {
+			background-color: #1e591e;
+		}
+
 		.wrapper.style3 {
 			background-color: #187EAF;
-			color: #d3d4e4;
+			color: #FFFFF7;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3023,7 +3039,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #FFFFF7;
 			}
 
 			.wrapper.style3 label {
@@ -3049,7 +3065,7 @@ input, select, textarea {
 
 			.wrapper.style3 input[type="checkbox"] + label,
 			.wrapper.style3 input[type="radio"] + label {
-				color: #d3d4e4;
+				color: #FFFFF7;
 			}
 
 				.wrapper.style3 input[type="checkbox"] + label:before,
