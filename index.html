@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
 		<title>WiseBee</title>
 		<meta charset="utf-8" />
@@ -20,7 +15,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a class="alternate-gothic" href="index.html" aria-label="Wise Bee">wisebee</a></h1>
+						<h1><a class="alternate-gothic" href="index.html" aria-label="Wise Bee" tabindex="0">wisebee</a></h1>
 						<!--
 						<nav id="nav">
 							<ul>
@@ -164,15 +159,14 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-							<!--
+						<!-- <ul class="icons">
+
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							-->
 							<li><a href="mailto:sara@becompliant.online" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+						</ul> -->
 						<ul class="copyright">
 							<li>&copy; BeCompliant.Online</li>
 						</ul>
@@ -180,7 +174,26 @@
 
 			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					const interactables = document.querySelectorAll(`
+					a[href],
+					button,
+					input,
+					textarea,
+					select,
+					summary,
+					[tabindex]:not([tabindex="-1"]),
+					[role="button"],
+					[role="link"]
+					`);
+
+					interactables.forEach(el => {
+					el.classList.add('wcag-focus');
+					});
+				});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -188,6 +201,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

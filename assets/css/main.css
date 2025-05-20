@@ -84,6 +84,13 @@ input, select, textarea {
 }
 
 
+.wcag-focus:focus {
+  outline: 3px solid #FABECA;
+  outline-offset: 2px;
+  background-color: rgba(0, 95, 204, 0.1);
+  border-radius: 4px;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2839,7 +2846,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #1e591e;
+			background-color: #187EAF;
 			color: #c8ece9;
 		}
 
@@ -3002,7 +3009,7 @@ input, select, textarea {
 		}
 
 		.inner.wrapper.style3 {
-			background-color: #1e591e;
+			background-color: #187EAF;
 		}
 
 		.wrapper.style3 {
